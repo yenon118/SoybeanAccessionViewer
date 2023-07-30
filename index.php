@@ -58,6 +58,7 @@ $result_arr = pdoResultFilter($result);
 // Add data button
 echo "<div style=\"margin-bottom:10px;\" align=\"center\">";
 echo "<button type=\"button\" style=\"background-color: #DDFFDD;\" onclick=\"addARecord()\">Add A Record</button>";
+echo "<button type=\"button\" style=\"background-color: #FFFFFF; margin-left: 20px;\" onclick=\"downloadAllRecords()\">Download</button>";
 echo "</div>";
 
 // Make table to display data
