@@ -1,6 +1,7 @@
 <?php
 
-function insertDataQueryString($db, $table, $accession, $soykb_accession, $grin_accession, $sra_name, $taxonomy, $state, $country, $maturity_group, $improvement_status, $classification, $source) {
+function insertDataQueryString($db, $table, $accession, $soykb_accession, $grin_accession, $sra_name, $taxonomy, $state, $country, $maturity_group, $improvement_status, $classification, $source)
+{
 
     if (empty($accession)) {
         return "";

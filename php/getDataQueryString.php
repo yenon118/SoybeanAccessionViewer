@@ -1,6 +1,7 @@
 <?php
 
-function getDataQueryString($db, $table, $where = ""){
+function getDataQueryString($db, $table, $where = "")
+{
 
     // Generate SQL string
     $query_str = "SELECT * FROM " . $db . "." . $table . " ";

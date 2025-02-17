@@ -7,6 +7,8 @@ include 'getDataQueryString.php';
 
 $accession = $_GET['Accession'];
 
+$accession = clean_malicious_input($accession);
+
 $db = "soykb";
 $table = "aview_Soybean_Accession_Mapping";
 

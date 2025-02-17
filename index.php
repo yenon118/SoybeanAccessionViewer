@@ -1,4 +1,4 @@
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 <?php
 $TITLE = "Soybean Accession Viewer";
@@ -86,7 +86,7 @@ for ($i = 0; $i < count($result_arr); $i++) {
 	// Edit data button
 	echo "<td><button type=\"button\" style=\"background-color: #99CCFF;\" value=\"" . $result_arr[$i]["Accession"] . "\" onclick=\"updateARecord('" . $result_arr[$i]["Accession"] . "')\">Edit</button></td>";
 	// Index, which is the loop counter here
-	echo "<td>" . ($i+1) . "</td>";
+	echo "<td>" . ($i + 1) . "</td>";
 	foreach ($result_arr[$i] as $key => $value) {
 		echo "<td>" . $value . "</td>";
 	}

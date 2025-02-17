@@ -1,6 +1,7 @@
 <?php
 
-function updateDataQueryString($db, $table, $accession, $soykb_accession, $grin_accession, $sra_name, $taxonomy, $state, $country, $maturity_group, $improvement_status, $classification, $source) {
+function updateDataQueryString($db, $table, $accession, $soykb_accession, $grin_accession, $sra_name, $taxonomy, $state, $country, $maturity_group, $improvement_status, $classification, $source)
+{
 
     if (empty($accession)) {
         return "";
@@ -69,7 +70,7 @@ function updateDataQueryString($db, $table, $accession, $soykb_accession, $grin_
 
     // Generate SQL string
     $query_str = "UPDATE " . $db . "." . $table . " SET ";
-    
+
     $query_str = $query_str . "SoyKB_Accession = " . $soykb_accession . ", ";
     $query_str = $query_str . "GRIN_Accession = " . $grin_accession . ", ";
     $query_str = $query_str . "SRA_Name = " . $sra_name . ", ";

@@ -1,6 +1,7 @@
 <?php
 
-function deleteDataQueryString($db, $table, $accession) {
+function deleteDataQueryString($db, $table, $accession)
+{
 
     if (empty($accession)) {
         return "";

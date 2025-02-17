@@ -8,6 +8,8 @@ include 'deleteDataQueryString.php';
 
 $accession = $_GET['Accession'];
 
+$accession = clean_malicious_input($accession);
+
 $db = "soykb";
 $table = "aview_Soybean_Accession_Mapping";
 
@@ -46,9 +48,7 @@ if (!empty($accession)) {
 			$stmt->execute();
 			$result = $stmt->fetchAll();
 		}
-
 	}
-
 }
 
 echo json_encode(array("data" => $result_arr), JSON_INVALID_UTF8_IGNORE);
